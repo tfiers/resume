@@ -1,0 +1,27 @@
+%====================
+% Header: Contact
+%====================
+\begin{center}
+
+    \begin{minipage}[b]{.2\textwidth}
+	\raggedright
+	{\large \phone} \\ % Phone
+	% {\city} \\ % City
+	\href{mailto:\email}{\email} % Email
+	\end{minipage}%
+    %
+	\begin{minipage}[b]{.6\textwidth}
+	\makeatletter
+	\centering {\huge \@author} \\
+	\makeatother
+    \vspace{.7em}
+	\end{minipage}%
+    %
+	\begin{minipage}[b]{.2\textwidth}
+	\raggedleft
+	\href{https://\website}{\large \website} \\
+	\href{https://github.com/\github}{github} |
+	\href{https://twitter.com/\twitter}{twitter}
+	\end{minipage}
+
+\end{center}
