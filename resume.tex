@@ -1,5 +1,8 @@
 \documentclass[a4]{article}
 
+\usepackage{hyperref}
+
+
 \author{Tomas Fiers}
 \def\email{tomas.fiers@gmail.com}
 \def\phoneUK{+44 7735 881 358}
@@ -10,12 +13,132 @@
 \def\github{tfiers}
 \def\twitter{TomasFiers}
 
+
 \begin{document}
 
-{\huge \@author}
 
-\section*{Current position}
+{\large\phone}
+\href{mailto:\email}{\email}
 
-PhDstudent in computational neuroscience
+\makeatletter  % This and \makeatother needed for `\@author' to work.
+{\huge\@author}
+\makeatother
+
+\href{https://\website}{\large \website} \\
+\href{https://github.com/\github}{github} |
+\href{https://twitter.com/\twitter}{twitter}
+
+
+Profile \& values:
+Curiosity-driven
+Not satisfied with surface-level explanations
+High signal-to-noise communication
+Precision \& correctness
+Good user interfaces.
+
+Motivations:
+The pursuit of a proof-of-concept
+The flow  during a deep session of designing / problem-solving / performance-optimization
+
+
+\section{Current position}
+
+PhD student in computational neuroscience
+University of Nottingham, UK
+Feb 2020  –  Dec  2023  (expected)
+
+Topic:  Synapse-level network inference from voltage-imaging signals.
+Supervisors:  \href{https://humphries-lab.org}{Mark Humphries}, Matias Ison
+
+Skills trained:
+Modelling \& simulation of complex systems
+Scientific software design, testing, and performance-optimization (→ Library for spiking neural network simulations)
+Data analysis \& experimental design
+Maintaining a steady stream of scientific deliverables
+Process large amounts of new literature
+Communicate \& summarize complex ideas
+Self-direction, proactiveness, and critical self-assesment
+
+Outreach:
+\href{https://tomasfiers.net/posts/julia-for-scientists}{``Julia for Scientists''} talk
+TA \& technical infrastructure for the \href{https://github.com/neural-reckoning/cosyne-tutorial-2022}{2022 Tutorial} at COSYNE (major conference for computational \& systems neuroscience) \& for the \href{https://comob-project.github.io}{COMOB project} (collaborative brain modelling)
+
+
+\section{Work experience}
+
+\href{https://www.datacamp.com}{DataCamp}
+Data science training platform
+Software engineering intern
+Jul 2016  –  Sep 2016
+Leuven, Belgium
+Developed a complete data processing pipeline from scratch (Postgres, Redis, Node.js, React), that met the requirements for reliability, scalability, and performance, and that, last I heard, was still in use in production
+
+\href{https://byteflies.com}{Byteflies}
+Medical wearables startup
+Data science intern
+Jul 2017  –  Sep 2017
+Antwerp, Belgium
+Validate signal quality of motion sensors (accelerometer, gyroscope, magnetometer) against golden standard (motion capture), for use in a medical device (Python data stack).
+
+\href{https://www.fluves.com}{Fluves}
+Fiber-optic industrial monitoring
+Business analysis intern
+Sep 2017  –  Dec 2017
+Ghent, Belgium
+Preparation of business plan for joint venture with offshore wind company (Excel)
+
+
+\section{Education}
+
+BSc in engineering sciences
+Computer science \& electrical engineering
+Sep 2012  –  Jun 2017
+KU Leuven
+THE Ranking 2023: 42nd in World
+Belgium
+
+Led the teams that won the engineering design challenge for first years (2013, 1st place) and second years (2014, 2nd place; with a project on real-time speech processing)
+Broad curriculum (from o.chem to semiconductor technology)
+
+
+MSc in biomedical engineering
+Signal processing specialization
+Sep 2016  –  Jan 2019
+KU Leuven
+For the professional title of “burgerlijk ingenieur”  (highest-level STEM degree in the country)
+Belgium
+
+Some electives:
+Nonlinear dynamical systems
+Multivariate \& robust statistics
+Two Bayesian modelling  courses
+Three machine learning and AI courses
+IT security
+Computational \& Systems neuroscience
+
+Master thesis:  Real-time signal detection for closed-loop, in-vivo neuroscience. (Detection of sharp-wave ripples on electrodes implanted in the hippocampus, Kloosterman lab, at Neuro-Electronics Research Flanders).
+Filter design \& analysis
+RNN training \& evaluation
+GUI development for data annotation
+3D brain viewer
+
+
+\section{Languages}
+Expert:
+Julia
+Python
+
+Productive:
+OCaml
+R
+SQL
+C
+TypeScript
+React.js
+Kotlin
+LaTeX
+Command-line tools
+French
+
 
 \end{document}
