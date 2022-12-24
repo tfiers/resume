@@ -3,14 +3,17 @@
 
 ## Compilation
 
-With TinyTex, like [here](https://github.com/tfiers/phd-thesis)\
-but with XeLaTeX (for Unicode & modern fonts)
+With TinyTex, like [here](https://github.com/tfiers/phd-thesis); 
+but with XeLaTeX (for Unicode & modern fonts),
+and with these packages additionally installed:
 ```
-latexmk -pdf -xelatex -pvc resume.tex
+$ tlmgr.bat install --with-doc [none yet]
 ```
-(`pvc` = preview, continuously build)
 
-..and with these packages additionally installed
+See [`Justfile`](Justfile) for the build command, which you can run
+manually, or, after installing [`just`](https://github.com/casey/just)
+(e.g. via Chocolatey on Windows), by running
 ```
-tlmgr.bat install --with-doc [none yet]
+$ just
 ```
+in this directory.
