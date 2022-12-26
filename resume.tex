@@ -20,9 +20,9 @@
 {\large\phone}
 \href{mailto:\email}{\email}
 
-\makeatletter  % This and \makeatother needed for `\@author' to work.
+\makeatletter  % Make `@' a letter (normal character), so the below doesn't crash.
 {\huge\@author}
-\makeatother
+\makeatother  % Make it special again (prevent leaking pkg internals).
 
 \href{https://\website}{\large\website} \\
 \href{https://github.com/\github}{github} |
@@ -38,7 +38,7 @@ Good user interfaces.
 
 Motivations:
 The pursuit of a proof-of-concept
-The flow  during a deep session of designing / problem-solving / performance-optimization
+The \emph{flow} during a deep session of designing / problem-solving / performance-optimization
 
 
 
@@ -51,6 +51,11 @@ Feb 2020  –  Dec  2023  (expected)
 Topic:  Synapse-level network inference from voltage-imaging signals.
 Supervisors:  \href{https://humphries-lab.org}{Mark Humphries}, Matias Ison
 
+Topic:  Synapse-level network inference from voltage-imaging signals.
+Supervisors:  [Mark Humphries][1], Matias Ison
+
+[1]: https://humphries-lab.org
+
 Skills trained:
 Modelling \& simulation of complex systems
 Scientific software design, testing, and performance-optimization (→ Library for spiking neural network simulations)
@@ -59,6 +64,7 @@ Maintaining a steady stream of scientific deliverables
 Process large amounts of new literature
 Communicate \& summarize complex ideas
 Self-direction, proactiveness, and critical self-assesment
+% Writing (at different levels)
 
 Outreach:
 \href{https://tomasfiers.net/posts/julia-for-scientists}{``Julia for Scientists''} talk

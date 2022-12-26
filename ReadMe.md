@@ -1,6 +1,10 @@
 
 # My CV
 
+State: I used the Word version instead.
+(The data here is up to data as of now, Dec 2022. But there is no layout as you can see. For that, see the Word version (which is.. on website. soon. maybe)).
+
+
 ## Compilation
 
 With TinyTex, like [here](https://github.com/tfiers/phd-thesis); 
